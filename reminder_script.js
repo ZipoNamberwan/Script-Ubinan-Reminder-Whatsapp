@@ -40,7 +40,7 @@ function start(client) {
     for (const dt of data) {
       try {
         var phone_number = dt['phone_number'].replace('+', '');
-        var phone_number = '6282236981385'
+        // var phone_number = '6282236981385'
 
         const result = await client.sendText(phone_number, dt['message']);
         console.log('Result: ', result);
